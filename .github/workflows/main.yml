@@ -3,7 +3,7 @@ name: 🚀 Deploy to FTP
 on:
   push:
     branches:
-      - main  # Change to your branch name if different
+      - main  # Change this if using another branch
 
 jobs:
   deploy:
@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 📤 Deploy to FTP Server
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          server-dir: "/"  # Change if necessary
+          server-dir: "/"  # Adjust this path if needed
