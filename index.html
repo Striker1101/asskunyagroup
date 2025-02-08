@@ -61,186 +61,6 @@
       title="asskunya Ltd - Non-Oil Export &raquo; Comments Feed"
       href="https://asskunya.com/comments/feed/"
     />
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      window._wpemojiSettings = {
-        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-        ext: ".png",
-        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-        svgExt: ".svg",
-        source: {
-          concatemoji:
-            "https:\/\/asskunya.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1",
-        },
-      };
-      /*! This file is auto-generated */
-      !(function (i, n) {
-        var o, s, e;
-
-        function c(e) {
-          try {
-            var t = {
-              supportTests: e,
-              timestamp: new Date().valueOf(),
-            };
-            sessionStorage.setItem(o, JSON.stringify(t));
-          } catch (e) {}
-        }
-
-        function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
-          var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-            ),
-            r =
-              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-              e.fillText(n, 0, 0),
-              new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-              ));
-          return t.every(function (e, t) {
-            return e === r[t];
-          });
-        }
-
-        function u(e, t, n) {
-          switch (t) {
-            case "flag":
-              return n(
-                e,
-                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
-              )
-                ? !1
-                : !n(
-                    e,
-                    "\ud83c\uddfa\ud83c\uddf3",
-                    "\ud83c\uddfa\u200b\ud83c\uddf3"
-                  ) &&
-                    !n(
-                      e,
-                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                    );
-            case "emoji":
-              return !n(
-                e,
-                "\ud83d\udc26\u200d\u2b1b",
-                "\ud83d\udc26\u200b\u2b1b"
-              );
-          }
-          return !1;
-        }
-
-        function f(e, t, n) {
-          var r =
-              "undefined" != typeof WorkerGlobalScope &&
-              self instanceof WorkerGlobalScope
-                ? new OffscreenCanvas(300, 150)
-                : i.createElement("canvas"),
-            a = r.getContext("2d", {
-              willReadFrequently: !0,
-            }),
-            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
-          return (
-            e.forEach(function (e) {
-              o[e] = t(a, e, n);
-            }),
-            o
-          );
-        }
-
-        function t(e) {
-          var t = i.createElement("script");
-          (t.src = e), (t.defer = !0), i.head.appendChild(t);
-        }
-        "undefined" != typeof Promise &&
-          ((o = "wpEmojiSettingsSupports"),
-          (s = ["flag", "emoji"]),
-          (n.supports = {
-            everything: !0,
-            everythingExceptFlag: !0,
-          }),
-          (e = new Promise(function (e) {
-            i.addEventListener("DOMContentLoaded", e, {
-              once: !0,
-            });
-          })),
-          new Promise(function (t) {
-            var n = (function () {
-              try {
-                var e = JSON.parse(sessionStorage.getItem(o));
-                if (
-                  "object" == typeof e &&
-                  "number" == typeof e.timestamp &&
-                  new Date().valueOf() < e.timestamp + 604800 &&
-                  "object" == typeof e.supportTests
-                )
-                  return e.supportTests;
-              } catch (e) {}
-              return null;
-            })();
-            if (!n) {
-              if (
-                "undefined" != typeof Worker &&
-                "undefined" != typeof OffscreenCanvas &&
-                "undefined" != typeof URL &&
-                URL.createObjectURL &&
-                "undefined" != typeof Blob
-              )
-                try {
-                  var e =
-                      "postMessage(" +
-                      f.toString() +
-                      "(" +
-                      [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
-                      ) +
-                      "));",
-                    r = new Blob([e], {
-                      type: "text/javascript",
-                    }),
-                    a = new Worker(URL.createObjectURL(r), {
-                      name: "wpTestEmojiSupports",
-                    });
-                  return void (a.onmessage = function (e) {
-                    c((n = e.data)), a.terminate(), t(n);
-                  });
-                } catch (e) {}
-              c((n = f(s, u, p)));
-            }
-            t(n);
-          })
-            .then(function (e) {
-              for (var t in e)
-                (n.supports[t] = e[t]),
-                  (n.supports.everything =
-                    n.supports.everything && n.supports[t]),
-                  "flag" !== t &&
-                    (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
-                n.supports.everythingExceptFlag && !n.supports.flag),
-                (n.DOMReady = !1),
-                (n.readyCallback = function () {
-                  n.DOMReady = !0;
-                });
-            })
-            .then(function () {
-              return e;
-            })
-            .then(function () {
-              var e;
-              n.supports.everything ||
-                (n.readyCallback(),
-                (e = n.source || {}).concatemoji
-                  ? t(e.concatemoji)
-                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
-            }));
-      })((window, document), window._wpemojiSettings);
-      /* ]]> */
-    </script>
     <style id="wp-emoji-styles-inline-css" type="text/css">
       img.wp-smiley,
       img.emoji {
@@ -1011,14 +831,6 @@
       defer="defer"
       data-wp-strategy="defer"
     ></script>
-    <script type="text/javascript" id="woocommerce-js-extra">
-      /* <![CDATA[ */
-      var woocommerce_params = {
-        ajax_url: "\/wp-admin\/admin-ajax.php",
-        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
-      };
-      /* ]]> */
-    </script>
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.3.2"
@@ -1027,32 +839,6 @@
       data-wp-strategy="defer"
     ></script>
 
-    <!-- Google tag (gtag.js) snippet added by Site Kit -->
-
-    <!-- Google Analytics snippet added by Site Kit -->
-    <script
-      type="text/javascript"
-      src="https://www.googletagmanager.com/gtag/js?id=GT-NFBKSCH"
-      id="google_gtagjs-js"
-      async
-    ></script>
-    <script type="text/javascript" id="google_gtagjs-js-after">
-      /* <![CDATA[ */
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("set", "linker", {
-        domains: ["asskunya.com"],
-      });
-      gtag("js", new Date());
-      gtag("set", "developer_id.dZTNiMT", true);
-      gtag("config", "GT-NFBKSCH");
-      /* ]]> */
-    </script>
-
-    <!-- End Google tag (gtag.js) snippet added by Site Kit -->
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.24.4"
@@ -1100,18 +886,7 @@
       src="/assets/wp-content/themes/orgarium/assets/js/main.js?ver=6.7.1"
       id="orgarium-main-js"
     ></script>
-    <script type="text/javascript" id="wc-add-to-cart-js-extra">
-      /* <![CDATA[ */
-      var wc_add_to_cart_params = {
-        ajax_url: "\/wp-admin\/admin-ajax.php",
-        wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
-        i18n_view_cart: "View cart",
-        cart_url: "https:\/\/asskunya.com\/cart\/",
-        is_cart: "",
-        cart_redirect_after_add: "no",
-      };
-      /* ]]> */
-    </script>
+
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.3.2"
@@ -1136,30 +911,6 @@
     <meta name="generator" content="WooCommerce 9.3.2" />
     <link rel="shortlink" href="https://asskunya.com/" />
 
-    <!-- note-> not found -->
-    <link
-      rel="alternate"
-      title="oEmbed (JSON)"
-      type="application/json+oembed"
-      href="/assets/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fasskunya.com%2F"
-    />
-    <link
-      rel="alternate"
-      title="oEmbed (XML)"
-      type="text/xml+oembed"
-      href="/assets/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fasskunya.com%2F&#038;format=xml"
-    />
-    <meta name="generator" content="Redux 4.4.18" />
-    <!-- start Simple Custom CSS and JS -->
-    <script type="text/javascript"></script>
-    <!-- end Simple Custom CSS and JS -->
-    <!-- start Simple Custom CSS and JS -->
-    <script type="text/javascript"></script>
-    <!-- end Simple Custom CSS and JS -->
-    <meta name="generator" content="Site Kit by Google 1.135.0" />
-    <script>
-      var ajaxurl = "/assets/wp-admin/admin-ajax.php";
-    </script>
     <noscript
       ><style>
         .woocommerce-product-gallery {
@@ -1171,34 +922,6 @@
       name="generator"
       content="Elementor 3.24.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto"
     />
-
-    <script type="application/ld+json" class="saswp-schema-markup-output">
-      [
-        {
-          "@context": "https:\/\/schema.org\/",
-          "@type": "WebSite",
-          "@id": "https:\/\/asskunya.com#website",
-          "headline": "asskunya resources Ltd - Non-Oil Export",
-          "name": "asskunya resources Ltd - Non-Oil Export",
-          "description": "All our Dried Agricultural Products at asskunya  Resource, are available for Export. We cut across food, medical and health industry.",
-          "url": "https:\/\/asskunya.com",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https:\/\/asskunya.com?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-
-        {
-          "@context": "https:\/\/schema.org\/",
-          "@type": "Organization",
-          "@id": "https:\/\/asskunya.com#Organization",
-          "name": "asskunya resources Ltd &#8211; Non-Oil Export",
-          "url": "https:\/\/asskunya.com",
-          "sameAs": []
-        }
-      ]
-    </script>
 
     <style>
       .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload),
@@ -1260,87 +983,35 @@
           format("woff2");
       }
     </style>
-    <script>
-      function setREVStartSize(e) {
-        //window.requestAnimationFrame(function() {
-        window.RSIW =
-          window.RSIW === undefined ? window.innerWidth : window.RSIW;
-        window.RSIH =
-          window.RSIH === undefined ? window.innerHeight : window.RSIH;
-        try {
-          var pw = document.getElementById(e.c).parentNode.offsetWidth,
-            newh;
-          pw =
-            pw === 0 ||
-            isNaN(pw) ||
-            e.l == "fullwidth" ||
-            e.layout == "fullwidth"
-              ? window.RSIW
-              : pw;
-          e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
-          e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
-          e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
-          e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
-          e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
-          e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-          e.mh =
-            e.mh === undefined || e.mh == "" || e.mh === "auto"
-              ? 0
-              : parseInt(e.mh, 0);
-          if (e.layout === "fullscreen" || e.l === "fullscreen")
-            newh = Math.max(e.mh, window.RSIH);
-          else {
-            e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-            for (var i in e.rl)
-              if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
-            e.gh =
-              e.el === undefined ||
-              e.el === "" ||
-              (Array.isArray(e.el) && e.el.length == 0)
-                ? e.gh
-                : e.el;
-            e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-            for (var i in e.rl)
-              if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
-
-            var nl = new Array(e.rl.length),
-              ix = 0,
-              sl;
-            e.tabw = e.tabhide >= pw ? 0 : e.tabw;
-            e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
-            e.tabh = e.tabhide >= pw ? 0 : e.tabh;
-            e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
-            for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
-            sl = nl[0];
-            for (var i in nl)
-              if (sl > nl[i] && nl[i] > 0) {
-                sl = nl[i];
-                ix = i;
-              }
-            var m =
-              pw > e.gw[ix] + e.tabw + e.thumbw
-                ? 1
-                : (pw - (e.tabw + e.thumbw)) / e.gw[ix];
-            newh = e.gh[ix] * m + (e.tabh + e.thumbh);
-          }
-          var el = document.getElementById(e.c);
-          if (el !== null && el) el.style.height = newh + "px";
-          el = document.getElementById(e.c + "_wrapper");
-          if (el !== null && el) {
-            el.style.height = newh + "px";
-            el.style.display = "block";
-          }
-        } catch (e) {
-          console.log("Failure at Presize of Slider:" + e);
-        }
-        //});
-      }
-    </script>
 
     <!-- fontawesome cdn -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    /> -->
+    <!-- <link
+      src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flaticon@1.0.0/css/flaticon.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/plugins/flaticon2/flaticon.css"
     />
 
     <link
@@ -1351,7 +1022,41 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".swiper", {
+          slidesPerView: 3, // Number of slides visible at once
+          spaceBetween: 20, // Space between slides
+          loop: true, // Enable infinite scrolling
+          autoplay: {
+            delay: 3000, // Auto slide every 3 seconds
+            disableOnInteraction: false, // Keep autoplay after user interaction
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    </script>
   </head>
 
   <body
@@ -1467,7 +1172,7 @@
                 <div class="logo-mobile">
                   <a href="/">
                     <img
-                    style="height: 60px;"
+                      style="height: 60px"
                       src="/assets/wp-content/uploads/2022/10/logo.png"
                       alt="asskunya resources Ltd &#8211; Non-Oil Export"
                     />
@@ -1802,7 +1507,7 @@
                                     <div class="cart mini-cart-inner">
                                       <a
                                         class="mini-cart"
-                                        href="#"
+                                        href="./html/cart.html"
                                         title="View your shopping cart"
                                       >
                                         <span class="title-cart"
@@ -1848,10 +1553,11 @@
                                 <div class="content-inner">
                                   <div class="main-search gva-search">
                                     <a class="control-search">
-                                      <i
-                                        aria-hidden="true"
-                                        class="flaticon-search"
-                                      ></i>
+                                      <img
+                                        src="./assets/images/search.png"
+                                        alt="search"
+                                        width="20"
+                                      />
                                     </a>
 
                                     <div
@@ -2152,10 +1858,7 @@
                           data-widget_type="html.default"
                         >
                           <div class="elementor-widget-container">
-                            <a
-                              class="btn-theme"
-                              href="https://asskunya.com/get-a-quote"
-                            >
+                            <a class="btn-theme" href="./html/get-a-quote.html">
                               Get a Quote
                             </a>
                           </div>
@@ -2743,166 +2446,157 @@
                                               <div
                                                 class="gsc-icon-box-group layout-carousel swiper-slider-wrapper style-4"
                                               >
-                                                <div
-                                                  class=""
-                                                >
-                                                  <div
-                                                    class="init-carousel-swiper swiper"
-                                                    data-carousel='{"items":4,"items_lg":4,"items_md":3,"items_sm":2,"items_xs":2,"items_xx":1,"effect":"slide","space_between":30,"loop":1,"speed":690,"autoplay":1,"autoplay_delay":6500,"autoplay_hover":1,"navigation":0,"pagination":0,"dynamic_bullets":0,"pagination_type":"bullets"}'
-                                                  >
-                                                    <div class="swiper-wrapper">
-                                                      <div class="swiper-slide">
+                                                <div class="swiper">
+                                                  <div class="swiper-wrapper">
+                                                    <!-- Slide 1 -->
+                                                    <div class="swiper-slide">
+                                                      <div
+                                                        class="icon-box-item"
+                                                      >
                                                         <div
-                                                          class="icon-box-item elementor-repeater-item-3713104"
+                                                          class="icon-box-content"
                                                         >
-                                                          <div
-                                                            class="icon-box-content"
-                                                          >
-                                                            <div
-                                                              class="box-icon"
-                                                            >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-grape"
-                                                              ></i>
-                                                              <div
-                                                                class="number"
-                                                              >
-                                                                01
-                                                              </div>
-                                                            </div>
-                                                            <div
-                                                              class="content-inner"
-                                                            >
-                                                              <h3 class="title">
-                                                                Non-Oil Export &
-                                                                Agricultural
-                                                                Market
-                                                              </h3>
+                                                          <div class="box-icon">
+                                                            <img
+                                                              src="./assets/images/grape.png"
+                                                              alt="Grape Icon"
+                                                            />
+                                                            <div class="number">
+                                                              01
                                                             </div>
                                                           </div>
-                                                          <a
-                                                            href="./html/services/non-oil-export-agricultural-market.html"
-                                                            class="link-overlay"
+                                                          <div
+                                                            class="content-inner"
                                                           >
-                                                          </a>
+                                                            <h3 class="title">
+                                                              Non-Oil Export &
+                                                              Agricultural
+                                                              Market
+                                                            </h3>
+                                                          </div>
                                                         </div>
+                                                        <a
+                                                          href="./html/services/non-oil-export-agricultural-market.html"
+                                                          class="link-overlay"
+                                                        ></a>
                                                       </div>
-                                                      <div class="swiper-slide">
+                                                    </div>
+
+                                                    <!-- Slide 2 -->
+                                                    <div class="swiper-slide">
+                                                      <div
+                                                        class="icon-box-item"
+                                                      >
                                                         <div
-                                                          class="icon-box-item elementor-repeater-item-9134150"
+                                                          class="icon-box-content"
                                                         >
-                                                          <div
-                                                            class="icon-box-content"
-                                                          >
-                                                            <div
-                                                              class="box-icon"
-                                                            >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-agriculture"
-                                                              ></i>
-                                                              <div
-                                                                class="number"
-                                                              >
-                                                                02
-                                                              </div>
-                                                            </div>
-                                                            <div
-                                                              class="content-inner"
-                                                            >
-                                                              <h3 class="title">
-                                                                Logistic and
-                                                                Transportation
-                                                              </h3>
+                                                          <div class="box-icon">
+                                                            <img
+                                                              src="./assets/images/planting.png"
+                                                              alt="agric"
+                                                              width="20"
+                                                            />
+                                                            <div class="number">
+                                                              02
                                                             </div>
                                                           </div>
-                                                          <a
-                                                            href="https://asskunya.com/services/"
-                                                            class="link-overlay"
+                                                          <div
+                                                            class="content-inner"
                                                           >
-                                                          </a>
+                                                            <h3 class="title">
+                                                              Logistic and
+                                                              Transportation
+                                                            </h3>
+                                                          </div>
                                                         </div>
+                                                        <a
+                                                          href="https://asskunya.com/services/"
+                                                          class="link-overlay"
+                                                        ></a>
                                                       </div>
-                                                      <div class="swiper-slide">
+                                                    </div>
+
+                                                    <!-- Slide 3 -->
+                                                    <div class="swiper-slide">
+                                                      <div
+                                                        class="icon-box-item"
+                                                      >
                                                         <div
-                                                          class="icon-box-item elementor-repeater-item-4d6217d"
+                                                          class="icon-box-content"
                                                         >
-                                                          <div
-                                                            class="icon-box-content"
-                                                          >
-                                                            <div
-                                                              class="box-icon"
-                                                            >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-social-care"
-                                                              ></i>
-                                                              <div
-                                                                class="number"
-                                                              >
-                                                                03
-                                                              </div>
-                                                            </div>
-                                                            <div
-                                                              class="content-inner"
-                                                            >
-                                                              <h3 class="title">
-                                                                Professional &
-                                                                Talented Experts
-                                                              </h3>
+                                                          <div class="box-icon">
+                                                            <img
+                                                              src="./assets/images/social-care.png"
+                                                              alt="social-care"
+                                                              width="30"
+                                                            />
+                                                            <div class="number">
+                                                              03
                                                             </div>
                                                           </div>
-                                                          <a
-                                                            href="https://asskunya.com/services/"
-                                                            class="link-overlay"
+                                                          <div
+                                                            class="content-inner"
                                                           >
-                                                          </a>
+                                                            <h3 class="title">
+                                                              Professional &
+                                                              Talented Experts
+                                                            </h3>
+                                                          </div>
                                                         </div>
+                                                        <a
+                                                          href="https://asskunya.com/services/"
+                                                          class="link-overlay"
+                                                        ></a>
                                                       </div>
-                                                      <div class="swiper-slide">
+                                                    </div>
+
+                                                    <!-- Slide 4 -->
+                                                    <div class="swiper-slide">
+                                                      <div
+                                                        class="icon-box-item"
+                                                      >
                                                         <div
-                                                          class="icon-box-item elementor-repeater-item-ab026cf"
+                                                          class="icon-box-content"
                                                         >
-                                                          <div
-                                                            class="icon-box-content"
-                                                          >
-                                                            <div
-                                                              class="box-icon"
-                                                            >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-farming"
-                                                              ></i>
-                                                              <div
-                                                                class="number"
-                                                              >
-                                                                04
-                                                              </div>
-                                                            </div>
-                                                            <div
-                                                              class="content-inner"
-                                                            >
-                                                              <h3 class="title">
-                                                                Consultancy and
-                                                                Technical
-                                                                Supports
-                                                              </h3>
+                                                          <div class="box-icon">
+                                                            <img
+                                                              src="./assets/images/planting.png"
+                                                              alt="farm"
+                                                            />
+                                                            <div class="number">
+                                                              04
                                                             </div>
                                                           </div>
-                                                          <a
-                                                            href="https://asskunya.com/services/"
-                                                            class="link-overlay"
+                                                          <div
+                                                            class="content-inner"
                                                           >
-                                                          </a>
+                                                            <h3 class="title">
+                                                              Consultancy and
+                                                              Technical Supports
+                                                            </h3>
+                                                          </div>
                                                         </div>
+                                                        <a
+                                                          href="https://asskunya.com/services/"
+                                                          class="link-overlay"
+                                                        ></a>
                                                       </div>
                                                     </div>
                                                   </div>
+
+                                                  <!-- Pagination -->
+                                                  <div
+                                                    class="swiper-pagination"
+                                                  ></div>
+
+                                                  <!-- Navigation Buttons -->
+                                                  <div
+                                                    class="swiper-button-next"
+                                                  ></div>
+                                                  <div
+                                                    class="swiper-button-prev"
+                                                  ></div>
                                                 </div>
-                                                <div
-                                                  class="swiper-pagination"
-                                                ></div>
                                               </div>
                                             </div>
                                           </div>
@@ -2945,7 +2639,7 @@
                                                 <div class="image">
                                                   <img
                                                     decoding="async"
-                                                    src="https://asskunya.com/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew.jpg"
+                                                    src="assets/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew.jpg"
                                                     alt=""
                                                   />
                                                 </div>
@@ -3122,10 +2816,10 @@
                                                             <div
                                                               class="milestone-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-agriculture-1"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/planting.png"
+                                                                alt="planting"
+                                                              />
                                                             </div>
                                                             <div
                                                               class="milestone-content"
@@ -3149,11 +2843,11 @@
                                                           </div>
                                                           <span
                                                             class="overlay-icon"
-                                                            ><i
-                                                              aria-hidden="true"
-                                                              class="flaticon2-agriculture-1"
-                                                            ></i
-                                                          ></span>
+                                                          >
+                                                            <img
+                                                              src="./assets/images/planting.png"
+                                                              alt="agriculture"
+                                                          /></span>
                                                         </div>
                                                       </div>
                                                       <div class="swiper-slide">
@@ -3166,10 +2860,10 @@
                                                             <div
                                                               class="milestone-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-agriculture"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/chemical.png"
+                                                                alt="agriculture"
+                                                              />
                                                             </div>
                                                             <div
                                                               class="milestone-content"
@@ -3194,11 +2888,11 @@
                                                           </div>
                                                           <span
                                                             class="overlay-icon"
-                                                            ><i
-                                                              aria-hidden="true"
-                                                              class="flaticon2-agriculture"
-                                                            ></i
-                                                          ></span>
+                                                            ><img
+                                                              src="./assets/images/planting.png"
+                                                              width="20"
+                                                              alt=""
+                                                          /></span>
                                                         </div>
                                                       </div>
                                                       <div class="swiper-slide">
@@ -3211,10 +2905,10 @@
                                                             <div
                                                               class="milestone-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-field"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/fields.png"
+                                                                alt="fields"
+                                                              />
                                                             </div>
                                                             <div
                                                               class="milestone-content"
@@ -3238,11 +2932,11 @@
                                                           </div>
                                                           <span
                                                             class="overlay-icon"
-                                                            ><i
-                                                              aria-hidden="true"
-                                                              class="flaticon2-field"
-                                                            ></i
-                                                          ></span>
+                                                            ><img
+                                                              src="./assets/images/fields.png"
+                                                              width="20"
+                                                              alt=""
+                                                          /></span>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -3280,14 +2974,9 @@
                                               decoding="async"
                                               width="700"
                                               height="525"
-                                              src="https://asskunya.com/wp-content/uploads/2021/04/sunflower-oil-seeds-1529343225-3990812.jpeg"
+                                              src="assets/wp-content/uploads/2021/04/sunflower-oil-seeds-1529343225-3990812.jpeg"
                                               class="attachment-full size-full wp-image-1847"
                                               alt="Sunflower Seeds"
-                                              srcset="
-                                                https://asskunya.com/wp-content/uploads/2021/04/sunflower-oil-seeds-1529343225-3990812.jpeg         700w,
-                                                https://asskunya.com/wp-content/uploads/2021/04/sunflower-oil-seeds-1529343225-3990812-300x225.jpeg 300w,
-                                                https://asskunya.com/wp-content/uploads/2021/04/sunflower-oil-seeds-1529343225-3990812-580x435.jpeg 580w
-                                              "
                                               sizes="(max-width: 700px) 100vw, 700px"
                                             />
                                           </div>
@@ -3545,10 +3234,11 @@
                                                             <div
                                                               class="box-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-wheat-sack"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/wheat.png"
+                                                                width="20"
+                                                                alt=""
+                                                              />
                                                             </div>
                                                             <div
                                                               class="content-inner"
@@ -3570,10 +3260,11 @@
                                                             <div
                                                               class="box-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-grape"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/grape.png"
+                                                                width="20"
+                                                                alt=""
+                                                              />
                                                             </div>
                                                             <div
                                                               class="content-inner"
@@ -3595,10 +3286,11 @@
                                                             <div
                                                               class="box-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-farming"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/chemical.png"
+                                                                width="20"
+                                                                alt=""
+                                                              />
                                                             </div>
                                                             <div
                                                               class="content-inner"
@@ -3620,10 +3312,10 @@
                                                             <div
                                                               class="box-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-wheat-2"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/wheat.png"
+                                                                alt="wheat"
+                                                              />
                                                             </div>
                                                             <div
                                                               class="content-inner"
@@ -3645,10 +3337,11 @@
                                                             <div
                                                               class="box-icon"
                                                             >
-                                                              <i
-                                                                aria-hidden="true"
-                                                                class="flaticon2-harvest"
-                                                              ></i>
+                                                              <img
+                                                                src="./assets/images/harvester.png"
+                                                                width="20"
+                                                                alt=""
+                                                              />
                                                             </div>
                                                             <div
                                                               class="content-inner"
@@ -3721,7 +3414,7 @@
                                             >
                                               <video
                                                 class="elementor-video"
-                                                src="https://asskunya.com/wp-content/uploads/2024/08/VID-20240815-WA0003.mp4"
+                                                src="https://faralresourcesltd.com/wp-content/uploads/2024/08/VID-20240815-WA0003.mp4"
                                                 controls=""
                                                 preload="metadata"
                                                 controlsList="nodownload"
@@ -3816,7 +3509,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-natural-badam-gond/"
+                                                                href="html/case/wholesale-natural-badam-gond.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -3824,7 +3517,7 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="435"
-                                                                  src="https://asskunya.com/wp-content/uploads/2023/03/Bowl-of-Badam-Gond-580x435.jpg"
+                                                                  src="assets/wp-content/uploads/2023/03/Bowl-of-Badam-Gond-580x435.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt="Bowl of Badam Gond"
                                                                 />
@@ -3840,7 +3533,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-natural-badam-gond/"
+                                                                    href="html/case/wholesale-natural-badam-gond.html"
                                                                     >Natural
                                                                     Badam
                                                                     Gond</a
@@ -3850,13 +3543,13 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/organic-foods/"
+                                                                    href="html/category-portfolio.html?id=organic-foods"
                                                                     title="View all posts in Organic Foods"
                                                                     >Organic
                                                                     Foods</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -3864,7 +3557,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-badam-gond/"
+                                                                    href="html/category-portfolio.html?id=wholesale-badam-gond"
                                                                     title="View all posts in Wholesale Badam Gond"
                                                                     >Wholesale
                                                                     Badam
@@ -3883,7 +3576,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-natural-badam-gond/"
+                                                              href="html/case/wholesale-natural-badam-gond.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -3898,7 +3591,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-dried-birds-eye-pepper/"
+                                                                href="html/case/wholesale-dried-birds-eye-pepper.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -3906,7 +3599,7 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="435"
-                                                                  src="https://asskunya.com/wp-content/uploads/2021/04/M9A3903_Nigeria_Zaria_Irene-Becker-e1678626166780-580x435.jpg"
+                                                                  src="assets/wp-content/uploads/2021/04/M9A3903_Nigeria_Zaria_Irene-Becker-e1678626166780-580x435.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt="dried birds eye pepper"
                                                                 />
@@ -3922,7 +3615,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-dried-birds-eye-pepper/"
+                                                                    href="html/case/wholesale-dried-birds-eye-pepper.html"
                                                                     >Dried
                                                                     Bird&#8217;s
                                                                     Eye
@@ -3933,13 +3626,13 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/organic-foods/"
+                                                                    href="html/category-portfolio.html?id=organic-foods"
                                                                     title="View all posts in Organic Foods"
                                                                     >Organic
                                                                     Foods</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -3947,7 +3640,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-dried-pepper/"
+                                                                    href="html/category-portfolio.html?id=wholesale-dried-pepper"
                                                                     title="View all posts in Wholesale dried pepper"
                                                                     >Wholesale
                                                                     dried
@@ -3966,7 +3659,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-dried-birds-eye-pepper/"
+                                                              href="html/case/wholesale-dried-birds-eye-pepper.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -3981,7 +3674,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-dried-hibiscus-siftings/"
+                                                                href="html/case/wholesale-dried-hibiscus-siftings.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -3989,7 +3682,7 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="435"
-                                                                  src="https://asskunya.com/wp-content/uploads/2022/09/2B-1-1-1-580x435.jpg"
+                                                                  src="assets/wp-content/uploads/2022/09/2B-1-1-1-580x435.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt="dried hibiscus siftings"
                                                                 />
@@ -4005,7 +3698,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-dried-hibiscus-siftings/"
+                                                                    href="html/case/wholesale-dried-hibiscus-siftings.html"
                                                                     >Dried
                                                                     Hibiscus
                                                                     Siftings</a
@@ -4015,13 +3708,13 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/organic-foods/"
+                                                                    href="html/category-portfolio.html?id=organic-foods"
                                                                     title="View all posts in Organic Foods"
                                                                     >Organic
                                                                     Foods</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -4029,7 +3722,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-dried-hibiscus-siftings/"
+                                                                    href="html/category-portfolio?id=wholesale-dried-hibiscus-siftings"
                                                                     title="View all posts in Wholesale Dried Hibiscus Siftings"
                                                                     >Wholesale
                                                                     Dried
@@ -4049,7 +3742,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-dried-hibiscus-siftings/"
+                                                              href="html/case/wholesale-dried-hibiscus-siftings.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -4064,7 +3757,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-cashew-nut/"
+                                                                href="html/case/wholesale-cashew-nut.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -4072,13 +3765,9 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="435"
-                                                                  src="https://asskunya.com/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-580x435.jpg"
+                                                                  src="/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-580x435.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt="Cashew nut"
-                                                                  srcset="
-                                                                    https://asskunya.com/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-580x435.jpg 580w,
-                                                                    https://asskunya.com/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-300x225.jpg 300w
-                                                                  "
                                                                   sizes="(max-width: 580px) 100vw, 580px"
                                                                 />
                                                               </a>
@@ -4093,7 +3782,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-cashew-nut/"
+                                                                    href="html/case/wholesale-cashew-nut.html"
                                                                     >Cashew
                                                                     Nut</a
                                                                   >
@@ -4102,13 +3791,13 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/organic-foods/"
+                                                                    href="html/category-portfolio.html?id=organic-foods"
                                                                     title="View all posts in Organic Foods"
                                                                     >Organic
                                                                     Foods</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -4116,7 +3805,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-cashew-nut/"
+                                                                    href="html/category-portfolio.html?id=wholesale-cashew-nut"
                                                                     title="View all posts in Wholesale Cashew Nut"
                                                                     >Wholesale
                                                                     Cashew
@@ -4135,7 +3824,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-cashew-nut/"
+                                                              href="html/case/wholesale-cashew-nut.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -4150,7 +3839,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-dried-split-ginger/"
+                                                                href="html/case/wholesale-dried-split-ginger.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -4158,7 +3847,7 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="435"
-                                                                  src="https://asskunya.com/wp-content/uploads/2022/09/Dried_Split_Ginger-580x435.jpg"
+                                                                  src="assets/wp-content/uploads/2022/09/Dried_Split_Ginger-580x435.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt="dried split ginger"
                                                                 />
@@ -4174,7 +3863,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-dried-split-ginger/"
+                                                                    href="html/case/wholesale-dried-split-ginger.html"
                                                                     >Dried Split
                                                                     Ginger</a
                                                                   >
@@ -4183,14 +3872,14 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/medical-health/"
+                                                                    href="html/category-portfolio.html?id=medical-health"
                                                                     title="View all posts in Medical &amp; Health"
                                                                     >Medical
                                                                     &amp;
                                                                     Health</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -4198,7 +3887,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-dried-split-ginger/"
+                                                                    href="html/category-portfolio.html?id=wholesale-dried-split-ginger"
                                                                     title="View all posts in Wholesale Dried Split Ginger"
                                                                     >Wholesale
                                                                     Dried Split
@@ -4217,7 +3906,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-dried-split-ginger/"
+                                                              href="html/case/wholesale-dried-split-ginger.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -4232,7 +3921,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-dried-hibiscus-flower/"
+                                                                href="html/case/wholesale-dried-hibiscus-flower.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -4240,7 +3929,7 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="435"
-                                                                  src="https://asskunya.com/wp-content/uploads/2022/09/hibiscus-580x435.jpg"
+                                                                  src="assets/wp-content/uploads/2022/09/hibiscus-580x435.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt="dried hibiscus flower"
                                                                 />
@@ -4256,7 +3945,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-dried-hibiscus-flower/"
+                                                                    href="html/case/wholesale-dried-hibiscus-flower.html"
                                                                     >Dried
                                                                     Hibiscus
                                                                     Flower</a
@@ -4266,13 +3955,13 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/organic-foods/"
+                                                                    href="html/category-portfolio.html?id=organic-foods"
                                                                     title="View all posts in Organic Foods"
                                                                     >Organic
                                                                     Foods</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -4280,7 +3969,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-dried-hibiscus-flower/"
+                                                                    href="html/category-portfolio.html?id=wholesale-dried-hibiscus-flower/"
                                                                     title="View all posts in Wholesale Dried Hibiscus Flower"
                                                                     >Wholesale
                                                                     Dried
@@ -4300,7 +3989,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-dried-hibiscus-flower/"
+                                                              href="html/case/wholesale-dried-hibiscus-flower.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -4315,7 +4004,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-sesame-seeds/"
+                                                                href="html/case/wholesale-sesame-seeds.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -4323,7 +4012,7 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="435"
-                                                                  src="https://asskunya.com/wp-content/uploads/2021/04/Nigeria_Sesame_seed-580x435.jpg"
+                                                                  src="assets/wp-content/uploads/2021/04/Nigeria_Sesame_seed-580x435.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt="Sesame seeds"
                                                                 />
@@ -4339,7 +4028,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-sesame-seeds/"
+                                                                    href="html/case/wholesale-sesame-seeds.html"
                                                                     >Sesame
                                                                     Seeds</a
                                                                   >
@@ -4348,13 +4037,13 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/organic-foods/"
+                                                                    href="html/category-portfolio.html?id=organic-foods"
                                                                     title="View all posts in Organic Foods"
                                                                     >Organic
                                                                     Foods</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -4362,7 +4051,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-sesame-seeds/"
+                                                                    href="html/category-portfolio.html?id=wholesale-sesame-seeds"
                                                                     title="View all posts in Wholesale Sesame Seeds"
                                                                     >Wholesale
                                                                     Sesame
@@ -4381,7 +4070,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-sesame-seeds/"
+                                                              href="html/case/wholesale-sesame-seeds.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -4396,7 +4085,7 @@
                                                             <div class="images">
                                                               <a
                                                                 class="link-image-content"
-                                                                href="https://asskunya.com/case/wholesale-shea-nuts/"
+                                                                href="html/case/wholesale-shea-nuts.html"
                                                               >
                                                                 <img
                                                                   loading="lazy"
@@ -4404,7 +4093,7 @@
                                                                   decoding="async"
                                                                   width="580"
                                                                   height="407"
-                                                                  src="https://asskunya.com/wp-content/uploads/2022/09/istockphoto-1290323627-612x612-1-580x407.jpg"
+                                                                  src="assets/wp-content/uploads/2022/09/istockphoto-1290323627-612x612-1-580x407.jpg"
                                                                   class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                   alt=""
                                                                 />
@@ -4420,7 +4109,7 @@
                                                                   class="title"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/case/wholesale-shea-nuts/"
+                                                                    href="html/case/wholesale-shea-nuts.html"
                                                                     >Shea
                                                                     Nuts</a
                                                                   >
@@ -4429,14 +4118,14 @@
                                                                   class="case-meta"
                                                                 >
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/medical-health/"
+                                                                    href="html/category-portfolio.html?id=medical-health"
                                                                     title="View all posts in Medical &amp; Health"
                                                                     >Medical
                                                                     &amp;
                                                                     Health</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-agricultural-produce/"
+                                                                    href="html/category-portfolio.html?id=wholesale-agricultural-produce"
                                                                     title="View all posts in Wholesale Agricultural Produce (Plants)"
                                                                     >Wholesale
                                                                     Agricultural
@@ -4444,7 +4133,7 @@
                                                                     (Plants)</a
                                                                   >,
                                                                   <a
-                                                                    href="https://asskunya.com/category-portfolio/wholesale-shea-nuts/"
+                                                                    href="html/category-portfolio.html?id=wholesale-shea-nuts"
                                                                     title="View all posts in Wholesale Shea nuts"
                                                                     >Wholesale
                                                                     Shea nuts</a
@@ -4462,7 +4151,7 @@
                                                             ></span>
                                                             <a
                                                               class="link-overlay"
-                                                              href="https://asskunya.com/case/wholesale-shea-nuts/"
+                                                              href="html/case/wholesale-shea-nuts.html"
                                                             ></a>
                                                           </div>
                                                         </div>
@@ -4797,15 +4486,14 @@
                                                                 "If you use
                                                                 Products
                                                                 supplied by
-                                                                asskunya
-                                                                Nigeria Limited
+                                                                asskunya Nigeria
+                                                                Limited
                                                                 intelligently, I
                                                                 can assure you
                                                                 it will put
                                                                 money into your
                                                                 pocket. They
-                                                                sell 
-                                                                Dried
+                                                                sell Dried
                                                                 Agricultural
                                                                 Products“
                                                               </div>
@@ -4935,7 +4623,7 @@
                                                             class="post-thumbnail"
                                                           >
                                                             <a
-                                                              href="https://asskunya.com/10-best-organic-make-up-products-that-your-face/"
+                                                              href="html/10-best-organic-make-up-products-that-your-face.html"
                                                             >
                                                               <img
                                                                 loading="lazy"
@@ -4943,7 +4631,7 @@
                                                                 decoding="async"
                                                                 width="580"
                                                                 height="375"
-                                                                src="https://asskunya.com/wp-content/uploads/2022/09/Hibiscus-tea-removebg-preview-580x375.png"
+                                                                src="assets/wp-content/uploads/2022/09/Hibiscus-tea-removebg-preview-580x375.png"
                                                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                 alt="The Surprising Health Benefits of Hibiscus"
                                                               />
@@ -4970,7 +4658,7 @@
                                                               <span
                                                                 class="cat-links"
                                                                 ><a
-                                                                  href="https://asskunya.com/category/uncategorized/"
+                                                                  href="html/category/uncategorized.html"
                                                                   rel="category tag"
                                                                   >Seed</a
                                                                 ></span
@@ -4979,7 +4667,7 @@
                                                                 class="entry-title"
                                                               >
                                                                 <a
-                                                                  href="https://asskunya.com/10-best-organic-make-up-products-that-your-face/"
+                                                                  href="html/10-best-organic-make-up-products-that-your-face.html"
                                                                   rel="bookmark"
                                                                   >The
                                                                   Surprising
@@ -5017,7 +4705,7 @@
                                                             >
                                                               <a
                                                                 class="btn-read-more"
-                                                                href="https://asskunya.com/10-best-organic-make-up-products-that-your-face/"
+                                                                href="html/10-best-organic-make-up-products-that-your-face.html"
                                                                 >Read more<i
                                                                   class="fa-regular fa-circle-right"
                                                                 ></i
@@ -5035,7 +4723,7 @@
                                                             class="post-thumbnail"
                                                           >
                                                             <a
-                                                              href="https://asskunya.com/organic-food-export-can-transform-economy/"
+                                                              href="html/organic-food-export-can-transform-economy.html"
                                                             >
                                                               <img
                                                                 loading="lazy"
@@ -5043,7 +4731,7 @@
                                                                 decoding="async"
                                                                 width="580"
                                                                 height="435"
-                                                                src="https://asskunya.com/wp-content/uploads/2021/04/ginger-roots-with-powder-and-slices-on-wooden-board-580x435.webp"
+                                                                src="assets/wp-content/uploads/2021/04/ginger-roots-with-powder-and-slices-on-wooden-board-580x435.webp"
                                                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                 alt="Ten Beauty Benefits Of Ginger For Hair And Skin"
                                                               />
@@ -5070,7 +4758,7 @@
                                                               <span
                                                                 class="cat-links"
                                                                 ><a
-                                                                  href="https://asskunya.com/category/uncategorized/"
+                                                                  href="html/category/uncategorized.html"
                                                                   rel="category tag"
                                                                   >Seed</a
                                                                 ></span
@@ -5079,7 +4767,7 @@
                                                                 class="entry-title"
                                                               >
                                                                 <a
-                                                                  href="https://asskunya.com/organic-food-export-can-transform-economy/"
+                                                                  href="html/organic-food-export-can-transform-economy.html"
                                                                   rel="bookmark"
                                                                   >Ten Beauty
                                                                   Benefits Of
@@ -5117,7 +4805,7 @@
                                                             >
                                                               <a
                                                                 class="btn-read-more"
-                                                                href="https://asskunya.com/organic-food-export-can-transform-economy/"
+                                                                href="html/organic-food-export-can-transform-economy.html"
                                                                 >Read more<i
                                                                   class="fa-regular fa-circle-right"
                                                                 ></i
@@ -5135,7 +4823,7 @@
                                                             class="post-thumbnail"
                                                           >
                                                             <a
-                                                              href="https://asskunya.com/cashew-nut-nutrition-facts/"
+                                                              href="html/cashew-nut-nutrition-facts.html"
                                                             >
                                                               <img
                                                                 loading="lazy"
@@ -5143,13 +4831,9 @@
                                                                 decoding="async"
                                                                 width="580"
                                                                 height="435"
-                                                                src="https://asskunya.com/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-580x435.jpg"
+                                                                src="assets/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-580x435.jpg"
                                                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                 alt="Cashew Nut Nutrition Facts:"
-                                                                srcset="
-                                                                  https://asskunya.com/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-580x435.jpg 580w,
-                                                                  https://asskunya.com/wp-content/uploads/2022/09/Salted_Flavor_Roasted_Cashew_Nuts_vietnam_cashew-e1664533129489-300x225.jpg 300w
-                                                                "
                                                                 sizes="(max-width: 580px) 100vw, 580px"
                                                               />
                                                             </a>
@@ -5175,7 +4859,7 @@
                                                               <span
                                                                 class="cat-links"
                                                                 ><a
-                                                                  href="https://asskunya.com/category/uncategorized/"
+                                                                  href="html/category/uncategorized.html"
                                                                   rel="category tag"
                                                                   >Seed</a
                                                                 ></span
@@ -5184,7 +4868,7 @@
                                                                 class="entry-title"
                                                               >
                                                                 <a
-                                                                  href="https://asskunya.com/cashew-nut-nutrition-facts/"
+                                                                  href="html/cashew-nut-nutrition-facts.html"
                                                                   rel="bookmark"
                                                                   >Cashew Nut
                                                                   Nutrition
@@ -5202,7 +4886,8 @@
                                                                     ><i
                                                                       class="far fa-user-circle"
                                                                     ></i
-                                                                    >asskunya Nigeria
+                                                                    >asskunya
+                                                                    Nigeria
                                                                     Limited</span
                                                                   ><span
                                                                     class="post-comment"
@@ -5220,7 +4905,7 @@
                                                             >
                                                               <a
                                                                 class="btn-read-more"
-                                                                href="https://asskunya.com/cashew-nut-nutrition-facts/"
+                                                                href="html/cashew-nut-nutrition-facts.html"
                                                                 >Read more<i
                                                                   class="fa-regular fa-circle-right"
                                                                 ></i
@@ -5338,8 +5023,7 @@
                           </h3>
 
                           <p class="elementor-icon-box-description">
-                            No.905 Dawanau Market Kano, Kano State,
-                            Nigeria
+                            No.905 Dawanau Market Kano, Kano State, Nigeria
                           </p>
                         </div>
                       </div>
@@ -6050,8 +5734,7 @@
                     <div class="elementor-widget-container">
                       <div>
                         © 2022 Copyrights by
-                        <strong>asskunya Nig Ltd</strong>. All Rights
-                        Reserved
+                        <strong>asskunya Nig Ltd</strong>. All Rights Reserved
                       </div>
                     </div>
                   </div>
@@ -6077,52 +5760,6 @@
       </defs>
     </svg>
 
-    <script>
-      window.RS_MODULES = window.RS_MODULES || {};
-      window.RS_MODULES.modules = window.RS_MODULES.modules || {};
-      window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
-      window.RS_MODULES.defered = true;
-      window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
-      window.RS_MODULES.type = "compiled";
-    </script>
-
-    <script>
-      window.addEventListener("load", function () {
-        (function ($) {
-          $(document.body).on("wfob_bump_trigger", function (e, rsp) {
-            if (
-              $("input[name='wc-braintree-credit-card-3d-secure-order-total']")
-                .length === 0
-            ) {
-              return;
-            }
-
-            if (rsp && rsp.hasOwnProperty("cart_total")) {
-              $(
-                "input[name='wc-braintree-credit-card-3d-secure-order-total']"
-              ).val(rsp.cart_total);
-            }
-          });
-        })(jQuery);
-      });
-    </script>
-    <script>
-      (function () {
-        function maybePrefixUrlField() {
-          const value = this.value.trim();
-          if (value !== "" && value.indexOf("http") !== 0) {
-            this.value = "http://" + value;
-          }
-        }
-
-        const urlFields = document.querySelectorAll(
-          '.mc4wp-form input[type="url"]'
-        );
-        for (let j = 0; j < urlFields.length; j++) {
-          urlFields[j].addEventListener("blur", maybePrefixUrlField);
-        }
-      })();
-    </script>
     <div
       class="joinchat joinchat--right joinchat--btn"
       data-settings='{"telephone":"2348134480392","mobile_only":false,"button_delay":1,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":10,"message_badge":false,"message_send":"","message_hash":""}'
@@ -6356,29 +5993,13 @@
       src="/assets/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
       id="wp-i18n-js"
     ></script>
-    <script type="text/javascript" id="wp-i18n-js-after">
-      /* <![CDATA[ */
-      wp.i18n.setLocaleData({
-        "text direction\u0004ltr": ["ltr"],
-      });
-      /* ]]> */
-    </script>
+
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8"
       id="swv-js"
     ></script>
-    <script type="text/javascript" id="contact-form-7-js-extra">
-      /* <![CDATA[ */
-      var wpcf7 = {
-        api: {
-          root: "https:\/\/asskunya.com\/wp-json\/",
-          namespace: "contact-form-7\/v1",
-        },
-        cached: "1",
-      };
-      /* ]]> */
-    </script>
+
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8"
@@ -6413,38 +6034,7 @@
       src="/assets/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.3.2"
       id="sourcebuster-js-js"
     ></script>
-    <script type="text/javascript" id="wc-order-attribution-js-extra">
-      /* <![CDATA[ */
-      var wc_order_attribution = {
-        params: {
-          lifetime: 1.0e-5,
-          session: 30,
-          base64: false,
-          ajaxurl: "https:\/\/asskunya.com\/wp-admin\/admin-ajax.php",
-          prefix: "wc_order_attribution_",
-          allowTracking: true,
-        },
-        fields: {
-          source_type: "current.typ",
-          referrer: "current_add.rf",
-          utm_campaign: "current.cmp",
-          utm_source: "current.src",
-          utm_medium: "current.mdm",
-          utm_content: "current.cnt",
-          utm_id: "current.id",
-          utm_term: "current.trm",
-          utm_source_platform: "current.plt",
-          utm_creative_format: "current.fmt",
-          utm_marketing_tactic: "current.tct",
-          session_entry: "current_add.ep",
-          session_start_time: "current_add.fd",
-          session_pages: "session.pgs",
-          session_count: "udata.vst",
-          user_agent: "udata.uag",
-        },
-      };
-      /* ]]> */
-    </script>
+
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.3.2"
@@ -6501,7 +6091,7 @@
       src="/assets/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
       id="jquery-ui-core-js"
     ></script>
-    <script type="text/javascript" id="elementor-frontend-js-before">
+    <!-- <script type="text/javascript" id="elementor-frontend-js-before">
       /* <![CDATA[ */
       var elementorFrontendConfig = {
         environmentMode: {
@@ -6630,7 +6220,7 @@
         },
       };
       /* ]]> */
-    </script>
+    </script> -->
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.24.4"
