@@ -1,0 +1,23 @@
+name: 🚀 Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main  # Change this if using another branch
+
+jobs:
+  deploy:
+    name: 📂 FTP Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 📤 Deploy to FTP Server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          server-dir: "/"  # Adjust this path if needed
