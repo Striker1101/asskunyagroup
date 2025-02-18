@@ -61,186 +61,7 @@
       title="asskunya Ltd - Non-Oil Export &raquo; Comments Feed"
       href="https://asskunya.com/comments/feed/"
     />
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      window._wpemojiSettings = {
-        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-        ext: ".png",
-        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-        svgExt: ".svg",
-        source: {
-          concatemoji:
-            "https:\/\/asskunya.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1",
-        },
-      };
-      /*! This file is auto-generated */
-      !(function (i, n) {
-        var o, s, e;
 
-        function c(e) {
-          try {
-            var t = {
-              supportTests: e,
-              timestamp: new Date().valueOf(),
-            };
-            sessionStorage.setItem(o, JSON.stringify(t));
-          } catch (e) {}
-        }
-
-        function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
-          var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-            ),
-            r =
-              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-              e.fillText(n, 0, 0),
-              new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-              ));
-          return t.every(function (e, t) {
-            return e === r[t];
-          });
-        }
-
-        function u(e, t, n) {
-          switch (t) {
-            case "flag":
-              return n(
-                e,
-                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
-              )
-                ? !1
-                : !n(
-                    e,
-                    "\ud83c\uddfa\ud83c\uddf3",
-                    "\ud83c\uddfa\u200b\ud83c\uddf3"
-                  ) &&
-                    !n(
-                      e,
-                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                    );
-            case "emoji":
-              return !n(
-                e,
-                "\ud83d\udc26\u200d\u2b1b",
-                "\ud83d\udc26\u200b\u2b1b"
-              );
-          }
-          return !1;
-        }
-
-        function f(e, t, n) {
-          var r =
-              "undefined" != typeof WorkerGlobalScope &&
-              self instanceof WorkerGlobalScope
-                ? new OffscreenCanvas(300, 150)
-                : i.createElement("canvas"),
-            a = r.getContext("2d", {
-              willReadFrequently: !0,
-            }),
-            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
-          return (
-            e.forEach(function (e) {
-              o[e] = t(a, e, n);
-            }),
-            o
-          );
-        }
-
-        function t(e) {
-          var t = i.createElement("script");
-          (t.src = e), (t.defer = !0), i.head.appendChild(t);
-        }
-        "undefined" != typeof Promise &&
-          ((o = "wpEmojiSettingsSupports"),
-          (s = ["flag", "emoji"]),
-          (n.supports = {
-            everything: !0,
-            everythingExceptFlag: !0,
-          }),
-          (e = new Promise(function (e) {
-            i.addEventListener("DOMContentLoaded", e, {
-              once: !0,
-            });
-          })),
-          new Promise(function (t) {
-            var n = (function () {
-              try {
-                var e = JSON.parse(sessionStorage.getItem(o));
-                if (
-                  "object" == typeof e &&
-                  "number" == typeof e.timestamp &&
-                  new Date().valueOf() < e.timestamp + 604800 &&
-                  "object" == typeof e.supportTests
-                )
-                  return e.supportTests;
-              } catch (e) {}
-              return null;
-            })();
-            if (!n) {
-              if (
-                "undefined" != typeof Worker &&
-                "undefined" != typeof OffscreenCanvas &&
-                "undefined" != typeof URL &&
-                URL.createObjectURL &&
-                "undefined" != typeof Blob
-              )
-                try {
-                  var e =
-                      "postMessage(" +
-                      f.toString() +
-                      "(" +
-                      [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
-                      ) +
-                      "));",
-                    r = new Blob([e], {
-                      type: "text/javascript",
-                    }),
-                    a = new Worker(URL.createObjectURL(r), {
-                      name: "wpTestEmojiSupports",
-                    });
-                  return void (a.onmessage = function (e) {
-                    c((n = e.data)), a.terminate(), t(n);
-                  });
-                } catch (e) {}
-              c((n = f(s, u, p)));
-            }
-            t(n);
-          })
-            .then(function (e) {
-              for (var t in e)
-                (n.supports[t] = e[t]),
-                  (n.supports.everything =
-                    n.supports.everything && n.supports[t]),
-                  "flag" !== t &&
-                    (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
-                n.supports.everythingExceptFlag && !n.supports.flag),
-                (n.DOMReady = !1),
-                (n.readyCallback = function () {
-                  n.DOMReady = !0;
-                });
-            })
-            .then(function () {
-              return e;
-            })
-            .then(function () {
-              var e;
-              n.supports.everything ||
-                (n.readyCallback(),
-                (e = n.source || {}).concatemoji
-                  ? t(e.concatemoji)
-                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
-            }));
-      })((window, document), window._wpemojiSettings);
-      /* ]]> */
-    </script>
     <style id="wp-emoji-styles-inline-css" type="text/css">
       img.wp-smiley,
       img.emoji {
@@ -885,7 +706,7 @@
     <link
       rel="stylesheet"
       id="orgarium-fonts-css"
-      href="/assets/css2?family=Manrope:wght@400;500;600;700;800&#038;family=Handlee&#038;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Handlee&display=swap"
       type="text/css"
       media="all"
     />
@@ -1260,87 +1081,16 @@
           format("woff2");
       }
     </style>
-    <script>
-      function setREVStartSize(e) {
-        //window.requestAnimationFrame(function() {
-        window.RSIW =
-          window.RSIW === undefined ? window.innerWidth : window.RSIW;
-        window.RSIH =
-          window.RSIH === undefined ? window.innerHeight : window.RSIH;
-        try {
-          var pw = document.getElementById(e.c).parentNode.offsetWidth,
-            newh;
-          pw =
-            pw === 0 ||
-            isNaN(pw) ||
-            e.l == "fullwidth" ||
-            e.layout == "fullwidth"
-              ? window.RSIW
-              : pw;
-          e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
-          e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
-          e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
-          e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
-          e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
-          e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-          e.mh =
-            e.mh === undefined || e.mh == "" || e.mh === "auto"
-              ? 0
-              : parseInt(e.mh, 0);
-          if (e.layout === "fullscreen" || e.l === "fullscreen")
-            newh = Math.max(e.mh, window.RSIH);
-          else {
-            e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-            for (var i in e.rl)
-              if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
-            e.gh =
-              e.el === undefined ||
-              e.el === "" ||
-              (Array.isArray(e.el) && e.el.length == 0)
-                ? e.gh
-                : e.el;
-            e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-            for (var i in e.rl)
-              if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
-
-            var nl = new Array(e.rl.length),
-              ix = 0,
-              sl;
-            e.tabw = e.tabhide >= pw ? 0 : e.tabw;
-            e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
-            e.tabh = e.tabhide >= pw ? 0 : e.tabh;
-            e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
-            for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
-            sl = nl[0];
-            for (var i in nl)
-              if (sl > nl[i] && nl[i] > 0) {
-                sl = nl[i];
-                ix = i;
-              }
-            var m =
-              pw > e.gw[ix] + e.tabw + e.thumbw
-                ? 1
-                : (pw - (e.tabw + e.thumbw)) / e.gw[ix];
-            newh = e.gh[ix] * m + (e.tabh + e.thumbh);
-          }
-          var el = document.getElementById(e.c);
-          if (el !== null && el) el.style.height = newh + "px";
-          el = document.getElementById(e.c + "_wrapper");
-          if (el !== null && el) {
-            el.style.height = newh + "px";
-            el.style.display = "block";
-          }
-        } catch (e) {
-          console.log("Failure at Presize of Slider:" + e);
-        }
-        //});
-      }
-    </script>
 
     <!-- fontawesome cdn -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
     />
 
     <link
@@ -1464,7 +1214,7 @@
                 <div class="logo-mobile">
                   <a href="/">
                     <img
-                    style="height: 60px;"
+                      style="height: 60px"
                       src="/assets/wp-content/uploads/2022/10/logo.png"
                       alt="asskunya resources Ltd &#8211; Non-Oil Export"
                     />
@@ -2211,7 +1961,15 @@
                                   class="elementor-section elementor-top-section elementor-element elementor-element-a2abf68 elementor-section-boxed elementor-section-height-default elementor-section-height-default shape-bg-top-no"
                                   data-id="a2abf68"
                                   data-element_type="section"
-                                  data-settings='{"background_background":"slideshow","background_slideshow_gallery":[{"id":1203,"url":"https:\/\/gaviaspreview.com\/wp\/orgarium\/wp-content\/uploads\/2021\/12\/bg-9.jpg"},{"id":1008,"url":"https:\/\/gaviaspreview.com\/wp\/orgarium\/wp-content\/uploads\/2021\/10\/breadcrumb.jpg"}],"background_slideshow_ken_burns":"yes","background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500,"background_slideshow_ken_burns_zoom_direction":"in"}'
+                                  style="
+                                    height: 400px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: white;
+                                    background-image: url(https://gaviaspreview.com/wp/orgarium/wp-content/uploads/2021/10/breadcrumb.jpg);
+                                  "
+                                  data-settings='{"background_background":"slideshow","background_slideshow_gallery":[{"id":1203,"url":"https://gaviaspreview.com/wp/orgarium/wp-content/uploads/2021/10/breadcrumb.jpg"},{"id":1008,"url":"https://gaviaspreview.com/wp/orgarium/wp-content/uploads/2021/10/breadcrumb.jpg"}],"background_slideshow_ken_burns":"yes","background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500,"background_slideshow_ken_burns_zoom_direction":"in"}'
                                 >
                                   <div
                                     class="elementor-container elementor-column-gap-default"
@@ -2241,12 +1999,14 @@
                                               >
                                                 <div class="content-inner">
                                                   <h2 class="title">
-                                                    <span>About Us</span>
+                                                    <span style="color: white"
+                                                      >About Us</span
+                                                    >
                                                   </h2>
                                                   <div class="title-desc">
-                                                    Ass Kunya Nigeria Limited is a Company
-                                                    of Integrity, Quality and
-                                                    Timeliness
+                                                    Ass Kunya Nigeria Limited is
+                                                    a Company of Integrity,
+                                                    Quality and Timeliness
                                                   </div>
                                                 </div>
                                               </div>
@@ -2266,8 +2026,9 @@
                                     class="elementor-container elementor-column-gap-default"
                                   >
                                     <div
-                                      class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ae6f907"
+                                      class="elementor-col-25 elementor-top-column elementor-element elementor-element-ae6f907"
                                       data-id="ae6f907"
+                                      style="margin: 10px"
                                       data-element_type="column"
                                     >
                                       <div
@@ -2298,25 +2059,26 @@
                                                   </h2>
                                                   <div class="title-desc">
                                                     <span
-                                                      >ASS KUNYA NIGERIA LIMITED
+                                                      >FARAL RESOURCES VENTURES
                                                       LIMITED is a Nigerian
                                                       registered company with
                                                       the Corporate Affairs
                                                       Commission and was
-                                                      incorporated in August
-                                                      2023. The company became a
+                                                      incorporated in September
+                                                      2007. The company became a
                                                       Limited Liability Company
                                                       in December 2010. We are
                                                       into the business of
                                                       exporting of agricultural
                                                       products.</span
                                                     ><br /><br />We started our
-                                                    exporting business in 2022, even before 
-                                                     our incorporation through our partners licence and have since become one of
+                                                    exporting business in 2011
+                                                    and have since become one of
                                                     the leading exporter of
                                                     dried hibiscus flowers and
                                                     bye-products as well as
-                                                    other agricultural products.
+                                                    other
+                                                    agricultural&nbsp;products.
                                                     Our commitment to quality
                                                     and customer satisfaction
                                                     has made us one of the most
@@ -2334,8 +2096,8 @@
                                                     clients by providing quality
                                                     products and services. You
                                                     can learn more about us at
-                                                    asskunya.com with the button
-                                                    below.
+                                                    faralresources with the
+                                                    button below.
                                                   </div>
                                                 </div>
                                               </div>
@@ -2353,7 +2115,7 @@
                                           >
                                             <a
                                               class="btn-theme"
-                                              href="https://asskunya.com/contact/"
+                                              href="https://faralresourcesltd.com/contact/"
                                             >
                                               Contact Us
                                             </a>
@@ -2389,11 +2151,19 @@
                                                   data-value="0.99"
                                                   data-thickness="10"
                                                   data-empty-fill="#EDF3F6"
-                                                  data-lineCap="square"
+                                                  data-linecap="square"
                                                   data-size="100"
                                                   data-fill='{ "color": "#0825F0" }'
                                                 >
-                                                  <strong></strong>
+                                                  <canvas
+                                                    width="200"
+                                                    height="200"
+                                                    style="
+                                                      height: 100px;
+                                                      width: 100px;
+                                                    "
+                                                  ></canvas>
+                                                  <strong>99<i>%</i></strong>
                                                 </div>
                                                 <div class="title">
                                                   <span>Quality</span>
@@ -2432,11 +2202,19 @@
                                                   data-value="0.97"
                                                   data-thickness="10"
                                                   data-empty-fill="#EDF3F6"
-                                                  data-lineCap="square"
+                                                  data-linecap="square"
                                                   data-size="100"
                                                   data-fill='{ "color": "#C9C91E" }'
                                                 >
-                                                  <strong></strong>
+                                                  <canvas
+                                                    width="200"
+                                                    height="200"
+                                                    style="
+                                                      height: 100px;
+                                                      width: 100px;
+                                                    "
+                                                  ></canvas>
+                                                  <strong>97<i>%</i></strong>
                                                 </div>
                                                 <div class="title">
                                                   <span>Timeliness</span>
@@ -2475,11 +2253,19 @@
                                                   data-value="0.98"
                                                   data-thickness="10"
                                                   data-empty-fill="#EDF3F6"
-                                                  data-lineCap="square"
+                                                  data-linecap="square"
                                                   data-size="100"
                                                   data-fill='{ "color": "#BF1A1A" }'
                                                 >
-                                                  <strong></strong>
+                                                  <canvas
+                                                    width="200"
+                                                    height="200"
+                                                    style="
+                                                      height: 100px;
+                                                      width: 100px;
+                                                    "
+                                                  ></canvas>
+                                                  <strong>98<i>%</i></strong>
                                                 </div>
                                                 <div class="title">
                                                   <span>Integrity</span>
@@ -2496,6 +2282,10 @@
                                   class="elementor-section elementor-top-section elementor-element elementor-element-28c79d4 elementor-section-boxed elementor-section-height-default elementor-section-height-default shape-bg-top-no shape-bg-bottom-no"
                                   data-id="28c79d4"
                                   data-element_type="section"
+                                  style="
+                                    background-image: url(https://faralresourcesltd.com/wp-content/uploads/2022/06/bg-6.jpg);
+                                    color: white;
+                                  "
                                   data-settings='{"background_background":"classic"}'
                                 >
                                   <div
@@ -2727,8 +2517,7 @@
                           </h3>
 
                           <p class="elementor-icon-box-description">
-                            No. 905, Dawanau Market Kano, Kano State
-                            Nigeria
+                            No. 905, Dawanau Market Kano, Kano State Nigeria
                           </p>
                         </div>
                       </div>
@@ -2831,10 +2620,10 @@
                     <div class="elementor-widget-container">
                       <p>
                         <span style="font-family: georgia, palatino, serif"
-                          >ASS KUNYA NIGERIA LIMITED is an
-                          Agricultural commodities Exporters in Nigeria which
-                          specialized in the promotion, marketing, and supply of
-                          agricultural products.
+                          >ASS KUNYA NIGERIA LIMITED is an Agricultural
+                          commodities Exporters in Nigeria which specialized in
+                          the promotion, marketing, and supply of agricultural
+                          products.
                         </span>
                       </p>
                       <p>
@@ -3467,35 +3256,6 @@
     </svg>
 
     <script>
-      window.RS_MODULES = window.RS_MODULES || {};
-      window.RS_MODULES.modules = window.RS_MODULES.modules || {};
-      window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
-      window.RS_MODULES.defered = true;
-      window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
-      window.RS_MODULES.type = "compiled";
-    </script>
-
-    <script>
-      window.addEventListener("load", function () {
-        (function ($) {
-          $(document.body).on("wfob_bump_trigger", function (e, rsp) {
-            if (
-              $("input[name='wc-braintree-credit-card-3d-secure-order-total']")
-                .length === 0
-            ) {
-              return;
-            }
-
-            if (rsp && rsp.hasOwnProperty("cart_total")) {
-              $(
-                "input[name='wc-braintree-credit-card-3d-secure-order-total']"
-              ).val(rsp.cart_total);
-            }
-          });
-        })(jQuery);
-      });
-    </script>
-    <script>
       (function () {
         function maybePrefixUrlField() {
           const value = this.value.trim();
@@ -3514,7 +3274,7 @@
     </script>
     <div
       class="joinchat joinchat--right joinchat--btn"
-      data-settings='{"telephone":"2348134480392","mobile_only":false,"button_delay":1,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":10,"message_badge":false,"message_send":"","message_hash":""}'
+      data-settings='{"telephone":"2342348066625952","mobile_only":false,"button_delay":1,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":10,"message_badge":false,"message_send":"","message_hash":""}'
     >
       <div class="joinchat__button">
         <div class="joinchat__button__open"></div>
@@ -3634,29 +3394,13 @@
       src="/assets/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
       id="wp-i18n-js"
     ></script>
-    <script type="text/javascript" id="wp-i18n-js-after">
-      /* <![CDATA[ */
-      wp.i18n.setLocaleData({
-        "text direction\u0004ltr": ["ltr"],
-      });
-      /* ]]> */
-    </script>
+
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8"
       id="swv-js"
     ></script>
-    <script type="text/javascript" id="contact-form-7-js-extra">
-      /* <![CDATA[ */
-      var wpcf7 = {
-        api: {
-          root: "https:\/\/asskunyaltd.com\/wp-json\/",
-          namespace: "contact-form-7\/v1",
-        },
-        cached: "1",
-      };
-      /* ]]> */
-    </script>
+
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8"
@@ -3691,38 +3435,6 @@
       src="/assets/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.3.2"
       id="sourcebuster-js-js"
     ></script>
-    <script type="text/javascript" id="wc-order-attribution-js-extra">
-      /* <![CDATA[ */
-      var wc_order_attribution = {
-        params: {
-          lifetime: 1.0e-5,
-          session: 30,
-          base64: false,
-          ajaxurl: "https:\/\/asskunyaltd.com\/wp-admin\/admin-ajax.php",
-          prefix: "wc_order_attribution_",
-          allowTracking: true,
-        },
-        fields: {
-          source_type: "current.typ",
-          referrer: "current_add.rf",
-          utm_campaign: "current.cmp",
-          utm_source: "current.src",
-          utm_medium: "current.mdm",
-          utm_content: "current.cnt",
-          utm_id: "current.id",
-          utm_term: "current.trm",
-          utm_source_platform: "current.plt",
-          utm_creative_format: "current.fmt",
-          utm_marketing_tactic: "current.tct",
-          session_entry: "current_add.ep",
-          session_start_time: "current_add.fd",
-          session_pages: "session.pgs",
-          session_count: "udata.vst",
-          user_agent: "udata.uag",
-        },
-      };
-      /* ]]> */
-    </script>
     <script
       type="text/javascript"
       src="/assets/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.3.2"

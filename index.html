@@ -705,7 +705,7 @@
     <link
       rel="stylesheet"
       id="orgarium-fonts-css"
-      href="/assets/css2?family=Manrope:wght@400;500;600;700;800&#038;family=Handlee&#038;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Handlee&display=swap"
       type="text/css"
       media="all"
     />
@@ -989,16 +989,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    /> -->
-    <!-- <link
-      src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    /> -->
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
@@ -1039,7 +1030,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var swiper = new Swiper(".swiper", {
-          slidesPerView: 3, // Number of slides visible at once
+          slidesPerView: 3, // Default (Desktop)
           spaceBetween: 20, // Space between slides
           loop: true, // Enable infinite scrolling
           autoplay: {
@@ -1053,6 +1044,23 @@
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            320: {
+              // Small screens (phones)
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              // Medium screens (tablets)
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            1024: {
+              // Large screens (laptops)
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
           },
         });
       });
@@ -1394,7 +1402,7 @@
                                   ></i>
                                 </span>
                                 <span class="elementor-icon-list-text"
-                                  >28 Ayinde Street,Off Ogudu Road, Ojota,Lagos.
+                                  >No.905, Dawanau Market Kano, Kano State.
                                   Nigeria</span
                                 >
                               </li>
@@ -4262,7 +4270,7 @@
                                                                 decoding="async"
                                                                 width="145"
                                                                 height="165"
-                                                                src="https://asskunya.com/wp-content/uploads/2022/06/avatar-2.jpg"
+                                                                src="assets/wp-content/uploads/2022/06/avatar-2.jpg"
                                                                 alt="Kevin  Anderson"
                                                               />
                                                             </div>
@@ -4334,7 +4342,7 @@
                                                                 decoding="async"
                                                                 width="1707"
                                                                 height="2560"
-                                                                src="https://asskunya.com/wp-content/uploads/2022/10/pexels-anna-shvets-5029767-scaled.jpg"
+                                                                src="assets/wp-content/uploads/2022/10/pexels-anna-shvets-5029767-scaled.jpg"
                                                                 alt="christiana Smith"
                                                               />
                                                             </div>
@@ -4400,7 +4408,7 @@
                                                                 decoding="async"
                                                                 width="600"
                                                                 height="400"
-                                                                src="https://asskunya.com/wp-content/uploads/2022/12/12AF011122-Sithembele-Malgas_1.png"
+                                                                src="assets/wp-content/uploads/2022/12/12AF011122-Sithembele-Malgas_1.png"
                                                                 alt="James Browel"
                                                               />
                                                             </div>
@@ -4472,7 +4480,7 @@
                                                                 decoding="async"
                                                                 width="1707"
                                                                 height="2560"
-                                                                src="https://asskunya.com/wp-content/uploads/2022/10/pexels-consoler-creative-11588045-scaled.jpg"
+                                                                src="assets/wp-content/uploads/2022/10/pexels-consoler-creative-11588045-scaled.jpg"
                                                                 alt="David Kwapala"
                                                               />
                                                             </div>
@@ -5762,7 +5770,7 @@
 
     <div
       class="joinchat joinchat--right joinchat--btn"
-      data-settings='{"telephone":"2348134480392","mobile_only":false,"button_delay":1,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":10,"message_badge":false,"message_send":"","message_hash":""}'
+      data-settings='{"telephone":"2348066625952","mobile_only":false,"button_delay":1,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":10,"message_badge":false,"message_send":"","message_hash":""}'
     >
       <div class="joinchat__button">
         <div class="joinchat__button__open"></div>
